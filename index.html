@@ -6,7 +6,7 @@
       <!-- Basic Page Needs
          ================================================== -->
       <meta charset="utf-8">
-      <title>AMC Master - Documentation</title>
+      <title>AMC Master App - Documentation</title>
       <meta name="description" content="">
       <meta name="author" content="">
       <!-- Mobile Specific Metas	
@@ -39,15 +39,15 @@
             <div id="header-sm">
                <div class="col-md-3 logo"> <a href="index.html"><img src="images/mojoomla_logo.jpg" width="150" id="img-logo" alt="logo"></a> </div>
                <div class="col-md-8 col-md-offset-1 desc">
-                  <h4 class="slight">AMC Master</h4>
-                  <h5 class="slight"><small>Documented by Mojoomla - at June 01 2023</small></h5>
+                  <h4 class="slight">AMC Master App - AMC Management System</h4>
+                  <h5 class="slight"><small>Documented by Mojoomla - at January 1 2024</small></h5>
                </div>
             </div>
             <div class="col-md-4">
                <aside id="side-nav">
                   <div class="logo"> <img src="images/mojoomla_logo.png" id="img-logo" alt="mojoomla" style="margin-bottom:20px;"> </div>
                   <ul id="top-menu">
-                     <li><a href="#Api-section">API section</a></li>
+                     <li><a href="#introduction">Introduction</a></li>
                      <li><a href="#setting-up-android-project">setting up flutter Project</a></li>
                      <li><a href="#flutter-version">Flutter Version</a></li>
                      <li><a href="#change-application-name">Change Application Name</a></li>
@@ -55,41 +55,32 @@
                      <li><a href="#Android-Customization">Flutter Customization</a></li>
                      <li><a href="#sign-your-release-build">Create Release Build</a></li>
                      <li>
-                        <a href="#amc-app-pages">AMC App Overview</a>
+                        <a href="#garage-app-pages">AMC App Overview</a>
                         <ul>
                            <li><a href="#fronted-login">Login Screen</a></li>
-                           <li><a href="#student-view">Student Screen</a></li>
-                           <li><a href="#teacher_view">Teacher Screen</a></li>
+                           <li><a href="#dashboard-view">Dashboard Screen</a></li>
+                           <li><a href="#vehical-detaiils">Vehical Details Screen</a></li>
                         </ul>
                      </li>
-                     <li><a href="https://play.google.com/store/apps/details?id=com.schoolappniftysol" target="_blank">Download App</a></li>
                   </ul>
                </aside>
             </div>
             <div class="col-md-8">
                <section  id="Introduction">
                <div id="header" class="row">
-                  <div class="col-md-3 logo"> <a href="index.html"><img src="images/amc_logo.png" width="80" height="80" id="img-logo" alt="logo"></a> </div>
+                  <div class="col-md-3 logo"> <a href="index.html"><img src="images/amc_logo.png" width="230px" height="80px" id="img-logo" alt="logo"></a> </div>
                   <div class="col-md-8 col-md-offset-1 desc">
-                     <h4 class="slight">AMC Master<sub><small></small></sub></h4>
-                     <h5 class="slight"><small> Documented by Mojoomla</a> - at June 01 2023</small></h5>
+                     <h4 class="slight">AMC Master App - AMC Management System<sub><small></small></sub></h4>
+                     <h5 class="slight"><small> Documented by Mojoomla</a> - at January 1 2024</small></h5>
                   </div>
                </div>
                <hr class="vertical-space2">
                <p align="center"><img src="images/preview-image.png"></p>
-               <section id="Api-section">
-                  <h3><strong>A). <u>API Section</u> </strong></h3>
-                  <p>Before start using the application need to complete API setup, follow below steps to activate API from the WordPress backend
-                  <ol>
-                     <li>Copy API.zip file that you get with application</li>
-                     <li>Put API folder at WordPress backend at 'wp-content\plugins\school-management\' and extract it
-                     </li>
-                     <li>Add this line "require_once SMS_PLUGIN_DIR . '/api/school-api-files.php';" at "wp-content\plugins\school-management\school-management.php""
-                     </li>
-                     <li>After following the above steps API will be activated</li>
-                  </ol>
-               </section>
-               <section id="setting-up-android-project">
+			   <section id="introduction">
+                  <h3><strong>A). <u>Introduction</u> </strong></h3>
+                  <p align="justify">Annual Maintenance Contract (AMC) System that serves as an effective solution for managing comprehensive annual maintenance activities. This system appears to be designed with different user roles in mind, including Employees, Customers, and Admin Users. Each user role likely has specific access and responsibilities within the system.
+				  <p align="justify">User guide is comprehensive and covers all the options and functionalities provided by React.js within your system. You're advising users to review the documentation carefully, as it likely contains answers to most of the questions they might have about using the system.In the event that users encounter aspects that aren't covered in the user guide or if they have any additional questions, you're directing them to get in touch via email at sales@mojoomla.com. You're also assuring users that your team is committed to providing quick and effective assistance to address their inquiries.</section>
+			   <section id="setting-up-android-project">
                   <hr class="vertical-space2">
                   <h3><strong>B). <u>Setting up flutter project</u></strong></h3>
                   <br>
@@ -128,7 +119,7 @@
                <section id = "flutter-version">
                   <h3><strong>C).<u>Flutter Version</u></strong></h3>
                   <p>environment: </br>
-                     sdk: '>=2.18.4 <3.0.0' 
+                     sdk: '>=2.19.6 <3.0.0' 
                   </p>
                </section>
                <section id="change-application-name">
@@ -218,15 +209,7 @@
                   <section id="Android-Customization">
                      <h3><strong>F). <u>Flutter Customization</u></strong></h3>
                      <br>
-                     <h5><strong>1. <u>Server Url</u></strong></h5>
-                     The server url can be changed from the StaticData.dart file in the values folder.
-                     <ol>
-                        <li>Open the /school_app_flutter\lib\utils\StaticData.dart</li>
-                        <li>Example : BASE=http://..... </li>
-                        <li>Change the BASE value to the server url.</li>
-                        <li>Replace Your Url BASE value.</li>
-                     </ol>
-                     <h5><strong>2.<u>Change Launcher icon</u></strong></h5>
+                     <h5><strong>1.<u>Change Launcher icon</u></strong></h5>
                      <p>Change the launcher icon in <code>Replace the default app icons:<br>
                         <strong> -> </strong>For Android, navigate to the <strong>android/app/src/main/res</strong> directory in your Flutter project. Replace the icons in the mipmap directories with your custom icons, following the size-specific folders (e.g., mipmap-mdpi, mipmap-hdpi, etc.).<br>
                         <strong> -> </strong>For iOS, navigate to the <strong> ios/Runner/Assets.xcassets/AppIcon</strong> appiconset directory in your Flutter project. Replace the default icons with your custom icons. Make sure to match the size and format requirements for each icon.</code> 
@@ -235,7 +218,7 @@
                      <p><strong>Note:</strong> You need the 512x512 px size for publishing to Google Play.</p>
                   </section>
                   <br>
-                  <h5><strong>3. <u> Run Application on Emulator</u></strong></h5>
+                  <h5><strong>2. <u> Run Application on Emulator</u></strong></h5>
                   <code>Create an AVD Definition as follows:</code>
                   <ol>
                      <li>Launch the Android Virtual Device Manager by selecting Tools -> Android -> AVD Manage or by clicking the AVD Manager icon in the toolbar</li>
@@ -257,7 +240,7 @@
                   <section id="sign-your-release-build">
                      <h3><strong>G).<u>Sign your release build</u></strong></h3>
                      <br>
-                     <p>To sign a release build for School Management App, you can follow these steps:
+                     <p>To sign a release build for AMC Master App, you can follow these steps:
                         <br>
                         <strong>Step 1: Generate a keystore file</strong>
                      <li>Right-click on the "android" directory and select "Flutter" -> "Open Android module in Android Studio"</li>
@@ -278,48 +261,68 @@
                      <li>Certificate: Enter some information about yourself for your certificate. This information is not displayed in your app, but is included in your certificate as part of the APK.</li>
                      </p>
                      <li>Once you complete the form, click <strong>OK</strong>.</li>
-                     <img alt="" src="images/schooljks.png" height = "400" width = "400"></li>
+                     <img alt="" src="images/garagejks.png" height = "400" width = "800"></li>
                      <li>Now Replace <strong>dasinfomedia app.jks</strong> File and Open <strong>key.properties</strong> File And Change your <strong>.jks</strong> file Detail</li>
                      <li>Now you can follow these steps and Generate Your Release Apk</li>
                      <img alt="" src="images/apk.png" height = "200" width = "500"></li>
                      <p>Click on "Build" → then click on "Flutter" → and finally click on "Build APK".
-                        <strong>school_app_flutter\build\app\outputs\apk\release</strong>This space will appear after the build is complete.
+                        <strong>garage_flutter_app\build\app\outputs\apk\release</strong>This space will appear after the build is complete.
                      </p>
                   </section>
-                  <section id="amc-app-pages">
-                     <h3><strong>H).<u>AMC App Overview</u></strong></h3>
+                  <section id="garage-app-pages">
+                     <h3><strong>H).<u>AMC Master App Overview</u></strong></h3>
                      <br>
                      <section id="fronted-login">
                         <h3><strong><u>Login Screen:</u></strong></h3>
-                        <p> You will see this login screen.You can now login as admin student and teacher.</p>
+                        <p> You will see this login screen.You can now login.</p>
+						<strong> Login Admin ID And Password For Demo</strong>
+                        <p> <strong>Email :</strong>customer@gmail.com<br><strong>Password :</strong>customer</p>
                         <br>        
-                        <img alt="" src="images/login.png" height = "350" width = "200"><br><br>           
+                        <img alt="" src="images/1.png" height = "550" width = "300"> 
+                        <img alt="" src="images/6.png" height = "550" width = "300">						
                         </ol>
                      </section>
-                     <section id = "student-view">
-                        <h3><strong><u> Student Screen</u></strong></h3>
-                        <strong> Login Admin ID And Password For Demo</strong>
-                        <p> <strong>Email :</strong>studentapp@gmail.com<br><strong>Password :</strong>studentApp</p>
-                        <img alt="" src="images/student-drawer.png" height = "350" width = "200">
-                        <img alt="" src="images/student-dashboard.png" height = "350" width = "200">
+                     <section id = "dashboard-view">
+                        <h3><strong><u>Dashboard Screen</u></strong></h3>
+                        <p> In the dashboard screen we have use the Webview.</p>
+                        <p> Integrating a web view into Flutter dashboard can greatly enhance the functionality and user experience of your app, allowing you to seamlessly integrate web-based content alongside native features.</p>
+                     <li>Customize the WebView settings according to your requirements.</li>
+                     <li>Replace Api Base Url with the URL you want to load.</li>
+
+                        <img alt="" src="images/2.png" height = "550" width = "300">
+                        <img alt="" src="images/3.png" height = "550" width = "300">
+						
+						<p><br>Change the URL, you need to modify the appropriate files and configurations. Here's a step-by-step guide to help you change the URL:		
+                  </p>
+                  <ol>
+                     <li>Open the Flutter project in your preferred integrated development environment (IDE) or code editor.</li>
+                     <li>Locate the <strong>lib</strong> folder in the root directory of your Flutter project.</li>
+                     <li>Open the <strong>Util</strong>  folder and find the <strong>StaticData.dart </strong> File. By default, it should be something like <strong>apiBaseUrl: "https://www.google.com/"</strong>.</li>
+                     <li>Change the value of the <strong>apiBaseUrl </strong> field to your desired URL. Make sure to follow the naming conventions for Flutter projects (lowercase letters, underscores instead of spaces, etc.). For example, you can change it to <strong>apiBaseUrl: "Your Web URL"/</strong>.</li>
+                     <li>Save the <strong>StaticData.dart</strong> file.</li>
+                  </ol>
+                  <p><strong>Note :</strong>After following these steps, the name of your Flutter app should be updated. Remember to clean and rebuild your project to ensure the changes take effect.</p>
                      </section>
                      <br>
-                     <section id = "teacher_view">
-                        <h3><strong><u> Teacher Screen</u></strong></h3>
-                        <strong> Login Admin ID And Password For Demo</strong>
-                        <p> <strong>Email :</strong>teacher@gmail.com<br><strong>Password :</strong>teacher</p>
-                        <img alt="" src="images/teacher-drawer.png" height = "350" width = "200">
-                        <img alt="" src="images/teacher-dashboard.png" height = "350" width = "200">
+                     <section id = "vehical-detaiils">
+                        <h3><strong><u> Vehical Details Screen</u></strong></h3>
+                        <strong> Vehicle Information:</strong>
+						 <li><strong>License Plate Number: </strong>  The unique identifier assigned to the vehicle's license plate.</li>
+						 <li><strong>Vehicle Type and Model:</strong> The brand and specific model of the vehicle.</li>
+                     <li><strong>Fuel Type::</strong> The type of fuel the vehicle uses (e.g., gasoline, diesel, electric).</li>
+                     <li><strong>Year of Manufacture:</strong> The year the vehicle was manufactured.</li>
+                     
+					 <img alt="" src="images/4.png" height = "550" width = "300">
                      </section>
                      <!-- start-footer-->
-                     <div id="footer"> © 2023 Mojoomla All Rights Reserved. </div>
+                     <div id="footer"> © 2024 Mojoomla All Rights Reserved. </div>
                      <!-- end-footer -->
                   </section>
             </div>
             <!-- end-side-content -->
          </div>
          <!-- start-footer-->
-         <div id="footer-sm"> © 2023 Mojoomla All Rights Reserved. </div>
+         <div id="footer-sm"> © 2024 Mojoomla All Rights Reserved. </div>
          <!-- end-footer -->
          <div class="white-space"></div>
          </section>
