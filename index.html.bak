@@ -59,7 +59,7 @@
                         <ul>
                            <li><a href="#fronted-login">Login Screen</a></li>
                            <li><a href="#dashboard-view">Dashboard Screen</a></li>
-                           <li><a href="#vehical-detaiils">Vehical Details Screen</a></li>
+                           <li><a href="#user-detaiils">User Details Screen</a></li>
                         </ul>
                      </li>
                   </ul>
@@ -79,10 +79,7 @@
 			   <section id="introduction">
                   <h3><strong>A). <u>Introduction</u> </strong></h3>
                   <p align="justify">Annual Maintenance Contract (AMC) System that serves as an effective solution for managing comprehensive annual maintenance activities. This system appears to be designed with different user roles in mind, including Employees, Customers, and Admin Users. Each user role likely has specific access and responsibilities within the system.
- <p align="justify">User guide is comprehensive and covers all the options and functionalities provided by React.js within your system. You're advising users to review the documentation carefully, as it likely contains answers to most of the questions they might have about using the system.In the event that users encounter aspects that aren't covered in the user guide or if they have any additional questions, you're directing them to get in touch via email at sales@mojoomla.com. You're also assuring users that your team is committed to providing quick and effective assistance to address their inquiries.
-
-
-               </section>
+				  <p align="justify">User guide is comprehensive and covers all the options and functionalities provided by React.js within your system. You're advising users to review the documentation carefully, as it likely contains answers to most of the questions they might have about using the system.In the event that users encounter aspects that aren't covered in the user guide or if they have any additional questions, you're directing them to get in touch via email at sales@mojoomla.com. You're also assuring users that your team is committed to providing quick and effective assistance to address their inquiries.</section>
 			   <section id="setting-up-android-project">
                   <hr class="vertical-space2">
                   <h3><strong>B). <u>Setting up flutter project</u></strong></h3>
@@ -277,39 +274,29 @@
                      <br>
                      <section id="fronted-login">
                         <h3><strong><u>Login Screen:</u></strong></h3>
-                        <p> You will see this login screen.You can now login.</p>
-						<strong> Login Admin ID And Password For Demo</strong>
-                        <p> <strong>Email :</strong>customer@gmail.com<br><strong>Password :</strong>customer</p>
-                        <br>        
+                        <p> You will see this login screen.You can now login as customer username and password.</p>
+						     
                         <img alt="" src="images/1.png" height = "550" width = "300"> 
-                        <img alt="" src="images/6.png" height = "550" width = "300">						
-                        </ol>
+						                        <p> All users can login from this login screen.</p>
+
                      </section>
                      <section id = "dashboard-view">
                         <h3><strong><u>Dashboard Screen</u></strong></h3>
-                        <p> In the dashboard screen we have use the Webview.</p>
-                        <p> Integrating a web view into Flutter dashboard can greatly enhance the functionality and user experience of your app, allowing you to seamlessly integrate web-based content alongside native features.</p>
-                     <li>Customize the WebView settings according to your requirements.</li>
-                     <li>Replace Api Base Url with the URL you want to load.</li>
-
+                        
+<strong> Login Customer ID And Password For Demo</strong>
+                        <p> <strong>Email :</strong>customer@gmail.com<br><strong>Password :</strong>customer</p>
+                        <br>   
                         <img alt="" src="images/2.png" height = "550" width = "300">
-                        <img alt="" src="images/3.png" height = "550" width = "300">
 						
-						<p><br>Change the URL, you need to modify the appropriate files and configurations. Here's a step-by-step guide to help you change the URL:		
-                  </p>
-                  <ol>
-                     <li>Open the Flutter project in your preferred integrated development environment (IDE) or code editor.</li>
-                     <li>Locate the <strong>lib</strong> folder in the root directory of your Flutter project.</li>
-                     <li>Open the <strong>Util</strong>  folder and find the <strong>StaticData.dart </strong> File. By default, it should be something like <strong>apiBaseUrl: "https://www.google.com/"</strong>.</li>
-                     <li>Change the value of the <strong>apiBaseUrl </strong> field to your desired URL. Make sure to follow the naming conventions for Flutter projects (lowercase letters, underscores instead of spaces, etc.). For example, you can change it to <strong>apiBaseUrl: "Your Web URL"/</strong>.</li>
-                     <li>Save the <strong>StaticData.dart</strong> file.</li>
-                  </ol>
+						                        <img alt="" src="images/5.png" height = "550" width = "300">						
+
+                 
                   <p><strong>Note :</strong>After following these steps, the name of your Flutter app should be updated. Remember to clean and rebuild your project to ensure the changes take effect.</p>
                      </section>
                      <br>
-                     <section id = "vehical-detaiils">
-                        <h3><strong><u> Vehical Details Screen</u></strong></h3>
-                        <strong> Vehicle Information:</strong>
+                     <section id = "user-detaiils">
+                        <h3><strong><u> User Details Screen</u></strong></h3>
+                        <strong> User Information:</strong>
 						 <li><strong>License Plate Number: </strong>  The unique identifier assigned to the vehicle's license plate.</li>
 						 <li><strong>Vehicle Type and Model:</strong> The brand and specific model of the vehicle.</li>
                      <li><strong>Fuel Type::</strong> The type of fuel the vehicle uses (e.g., gasoline, diesel, electric).</li>
